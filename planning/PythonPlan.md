@@ -19,6 +19,7 @@
   - pandas -> read tabular file, plot
   - numpy, scipy
 - list of commonly-used libraries
+- running python scripts from the command line
 
 ## Day 3: 10:45-12:00
 - exercises
