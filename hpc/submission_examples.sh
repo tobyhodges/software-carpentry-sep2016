@@ -27,7 +27,7 @@ bsub -M 20000 \
 
 ## Setting a memory limit, and reserving the resources
 bsub -M 20000 \
--R "rusage[mem=20000]" \
+-R "rusage[mem=20]" \
 -o "output.txt" \
 -f "output.txt < output.txt" \
 "python ~/hpc_example.py -t 60 -l 200000"
@@ -35,7 +35,22 @@ bsub -M 20000 \
 
 ## Reserving a really large amount of memory
 bsub -M 20000 \
--R "rusage[mem=14000000]" \
+-R "rusage[mem=14000]" \
 -o "output.txt" \
 -f "output.txt < output.txt" \
 "python ~/hpc_example.py -t 60 -l 200000"
+
+
+## submitting an interactive job
+bsub -M 20000 -Is "sh"
+
+
+## using job names and dependencies
+bsub -J "job_part1" \
+-o "output.txt" \
+-f "output.txt < output.txt" \
+"python ~/hpc_example.py -t 60 -l 200"
+bsub -J "job_part2" -w "done(job_part1)" \
+-o "output.txt" \
+-f "output.txt < output.txt" \
+"python ~/hpc_example.py -t 60 -l 200"
