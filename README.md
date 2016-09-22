@@ -15,3 +15,5 @@
 - Natalie Romanov
 
 __Snakemake tutorial files available [here](https://git.embl.de/schwarzl/snakemake-tutorial)__
+
+__Luis' Git Intro talk materials available [here](https://github.com/luispedro/talk-git-intro)__
