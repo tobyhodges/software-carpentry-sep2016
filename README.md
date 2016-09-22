@@ -8,6 +8,7 @@
 - Mike Smith
 - Frank Thommen
 - Georg Zeller
+
 #### Helpers
 - Renato Alves
 - Marc Gouw
