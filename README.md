@@ -14,4 +14,4 @@
 - Marc Gouw
 - Natalie Romanov
 
-__Snakemake tutorial files available [here](https://git.embl.de/schwarzl/snakemake-tutorial)
+__Snakemake tutorial files available [here](https://git.embl.de/schwarzl/snakemake-tutorial)__
